@@ -1570,3 +1570,14 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Clean underline style for the clickable achievement card */
+.achievement-link.clickable .clickable-text {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 4px;
+}
+
+.achievement-link.clickable:hover .clickable-text {
+    color: var(--primary-color);
+}
