@@ -395,6 +395,13 @@ body {
         padding-top: 5rem; /* Increased padding for mobile */
     }
 
+       .project-image img {
+        width: 104%;
+        height: 77%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
         margin-bottom: 0.8rem;
