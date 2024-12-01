@@ -24,7 +24,7 @@ const analytics = getAnalytics(app);
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    // Get form values
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
