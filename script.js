@@ -4,7 +4,7 @@ import { getFirestore, collection, addDoc, serverTimestamp }
 from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
 
-// Your Firebase configuration
+//firebase config
 const firebaseConfig = {
     apiKey: "AIzaSyDr6xcvSmCXqH2XD-PxZeuBF3dXkdJRdHM",
     authDomain: "my-portfolio-b204e.firebaseapp.com",
@@ -30,13 +30,12 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     
-    // Disable submit button
+
     const submitBtn = document.querySelector('.submit-btn');
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span>Sending...</span>';
     
     try {
-        // Add document to Firestore
         await addDoc(collection(db, "messages"), {
             name: name,
             email: email,
@@ -45,10 +44,10 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
             timestamp: serverTimestamp()
         });
         
-        // Show success message
+
         showNotification('Message sent successfully!', 'success');
         
-        // Reset form
+
         document.getElementById('contactForm').reset();
         
     } catch (error) {
@@ -56,7 +55,6 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
         showNotification('Failed to send message. Please try again.', 'error');
     }
     
-    // Re-enable submit button
     submitBtn.disabled = false;
     submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
 });
@@ -69,7 +67,7 @@ function showNotification(message, type) {
     
     document.body.appendChild(notification);
     
-    // Remove notification after 3 seconds
+
     setTimeout(() => {
         notification.remove();
     }, 3000);
