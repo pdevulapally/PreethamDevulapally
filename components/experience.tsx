@@ -8,7 +8,7 @@ export default function Experience() {
       title: "Software Engineering (BEng) – Final Year",
       company: "University of Westminster",
       location: "London, UK",
-      period: "September 2022 – 2025",
+      period: "September 2024 – May 2025",
       achievements: [
         "Developing AI Fake News Detection website using RAG model and LLM",
         "Building responsive UI with HTML, CSS, and JavaScript",
