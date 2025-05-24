@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #3b82f6;
+  --accent-color: #8b5cf6;
+  --background: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --card-bg: rgba(30, 41, 59, 0.5);
+  --transition: all 0.3s ease;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-8 text-text-primary relative inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-1/2 h-1 bg-primary rounded-full;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-md hover:bg-opacity-90 transition-all duration-300 font-medium;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300 font-medium;
+  }
+
+  /* FIXED: Improved skill badge contrast - using explicit opacity classes instead of shorthand */
+  .skill-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-primary bg-opacity-20 text-white border border-primary border-opacity-30;
+  }
+
+  .card {
+    @apply bg-card-bg backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700 hover:border-primary transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-text-secondary hover:text-primary transition-all duration-300;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  /* FIXED: Added contact form styling */
+  .contact-info-card,
+  .contact-form-card {
+    @apply bg-card-bg backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700 hover:border-primary transition-all duration-300 h-full;
+  }
+
+  /* FIXED: Updated form input to use explicit opacity classes */
+  .form-input {
+    @apply w-full px-4 py-2 bg-background bg-opacity-80 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-text-primary;
+  }
+
+  /* Header styling - updated to use explicit opacity classes */
+  .header-scrolled {
+    @apply bg-background bg-opacity-90 backdrop-blur-md shadow-lg border-b border-gray-800;
+  }
+
+  .mobile-nav {
+    @apply md:hidden bg-background bg-opacity-95 backdrop-blur-md py-4 px-6 absolute top-full left-0 right-0 shadow-lg border-b border-gray-800;
+  }
+
+  /* Footer styling - updated to use explicit opacity classes */
+  .footer {
+    @apply py-8 border-t border-gray-800 bg-background bg-opacity-50;
+  }
+
+  .social-icon-link {
+    @apply text-text-secondary hover:text-primary transition-colors;
+  }
+
+  .back-to-top {
+    @apply flex items-center text-text-secondary hover:text-primary transition-colors;
+  }
+
+  /* Skill card styling - updated to use explicit opacity classes */
+  .skill-card {
+    @apply bg-card-bg rounded-xl p-5 shadow-md border border-gray-700 hover:border-primary hover:border-opacity-50 transition-all duration-300;
+  }
+
+  .skill-icon {
+    @apply w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-primary bg-opacity-10 text-primary;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Text reveal animation */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
