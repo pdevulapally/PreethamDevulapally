@@ -16,8 +16,8 @@ export default function Projects() {
         "Built responsive UI with modern design principles",
         "Developed custom algorithms for keyword analysis",
       ],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://fakeverifier.co.uk/",
+      githubLink: "https://github.com/pdevulapally/Preetham-Project",
       featured: true,
     },
     {
