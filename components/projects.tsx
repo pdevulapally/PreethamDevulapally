@@ -32,7 +32,7 @@ export default function Projects() {
         "Integrated TheSportsDB API for comprehensive football data",
         "Created intuitive search and filtering functionality",
       ],
-      liveLink: "https://drive.google.com/file/d/10tqvpyZddqQX39TG9JUV612CBTCsLVmW/view?usp=sharing",
+      Video Demonstration: "https://drive.google.com/file/d/10tqvpyZddqQX39TG9JUV612CBTCsLVmW/view?usp=sharing",
       featured: true,
     },
     {
@@ -47,8 +47,7 @@ export default function Projects() {
         "Implemented CRUD operations with proper validation",
         "Used Trello for agile project management",
       ],
-      liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/pdevulapally/Software-Group-Project",
       featured: true,
     },
     {
