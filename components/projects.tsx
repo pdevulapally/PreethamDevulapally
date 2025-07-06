@@ -32,7 +32,7 @@ export default function Projects() {
         "Integrated TheSportsDB API for comprehensive football data",
         "Created intuitive search and filtering functionality",
       ],
-      Video Demonstration: "https://drive.google.com/file/d/10tqvpyZddqQX39TG9JUV612CBTCsLVmW/view?usp=sharing",
+      liveLink: "https://drive.google.com/file/d/10tqvpyZddqQX39TG9JUV612CBTCsLVmW/view?usp=sharing",
       featured: true,
     },
     {
