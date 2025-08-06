@@ -65,7 +65,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="/CV/PREETHAM DEVULAPALLY.pdf"
+            href="/CV/PreethamDevulapallyCV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center py-2 px-4"
@@ -101,7 +101,7 @@ export default function Header() {
             ))}
             <li>
               <a
-                href="/CV/PREETHAM DEVULAPALLY.pdf"
+                href="/CV/PreethamDevulapallyCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary block text-center mt-4 flex items-center justify-center py-2"

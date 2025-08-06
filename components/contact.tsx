@@ -75,8 +75,8 @@ export default function Contact() {
           </div>
         </RevealText>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          <RevealText className="lg:col-span-2 space-y-6" delay={100}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <RevealText delay={100}>
             <div className="contact-info-card">
               <h3 className="text-xl font-semibold mb-6 text-primary">Get In Touch</h3>
 
@@ -119,7 +119,7 @@ export default function Contact() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-700">
-                <h4 className="font-medium text-text-primary mb-3">Looking for:</h4>
+                <h4 className="font-medium text-text-primary mb-3">Available for:</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
@@ -127,18 +127,18 @@ export default function Contact() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
-                    <span className="text-text-primary">Full-Stack Development Positions</span>
+                    <span className="text-text-primary">Full-Stack Development</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
-                    <span className="text-text-primary">Collaborative Team Environments</span>
+                    <span className="text-text-primary">Mobile App Development</span>
                   </li>
                 </ul>
               </div>
             </div>
           </RevealText>
 
-          <RevealText className="lg:col-span-3" delay={200}>
+          <RevealText delay={200}>
             <div className="contact-form-card">
               <h3 className="text-xl font-semibold mb-6 text-primary">Send a Message</h3>
 

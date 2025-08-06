@@ -5,39 +5,37 @@ import RevealText from "./reveal-text"
 export default function Projects() {
   const projects = [
     {
-      id: "fake-news",
-      title: "AI Fake News Detection",
-      description: "Web application that detects and explains fake news using AI and RAG models",
+      id: "ai-news-verifier",
+      title: "🧠 AI News Verifier – Final Year Project (2024–2025)",
+      description: "Real-time news credibility checker with AI explanation",
       image: "/Images/fakenewsdetectionhomepage.png",
-      technologies: ["HTML/CSS", "JavaScript", "Python", "AI/ML", "RAG", "NewsAPI"],
+      technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Firebase (Auth + Firestore)", "OpenAI GPT-4o API", "AWS EC2", "GitHub Actions"],
       keyPoints: [
-        "Implemented Retrieval-Augmented Generation (RAG) model for accurate fake news detection",
-        "Integrated with NewsAPI for real-time data processing",
-        "Built responsive UI with modern design principles",
-        "Developed custom algorithms for keyword analysis",
+        "Real-time news credibility checker with AI explanation",
+        "Full-stack app with secure user auth",
+        "CI/CD pipeline with GitHub Actions and AWS EC2 deployment"
       ],
       liveLink: "https://fakeverifier.co.uk/",
       githubLink: "https://github.com/pdevulapally/Preetham-Project",
       featured: true,
     },
     {
-      id: "football",
-      title: "Football Database App",
-      description: "Android application for browsing football leagues and clubs with local storage",
-      image: "/Images/FootballDBapp.png",
-      technologies: ["Kotlin", "Jetpack Compose", "Room DB", "Android", "REST API"],
+      id: "inventory-management",
+      title: "📦 Inventory Management System – University Project (2023)",
+      description: "Stock management system with dynamic UI",
+      image: "/Images/Item List-2.jpg",
+      technologies: ["Django (Python)", "PHP", "HTML/CSS/JS", "MySQL"],
       keyPoints: [
-        "Developed with Kotlin and Jetpack Compose for modern UI",
-        "Implemented Room database for offline data persistence",
-        "Integrated TheSportsDB API for comprehensive football data",
-        "Created intuitive search and filtering functionality",
+        "Stock management system with dynamic UI",
+        "MySQL database design and Django backend",
+        "Agile sprints and GitHub branching"
       ],
-      liveLink: "https://drive.google.com/file/d/10tqvpyZddqQX39TG9JUV612CBTCsLVmW/view?usp=sharing",
+      githubLink: "https://github.com/pdevulapally/Software-Group-Project",
       featured: true,
     },
     {
-      id: "inventory",
-      title: "University Inventory System",
+      id: "university-inventory",
+      title: "📦 University Inventory System",
       description: "Collaborative inventory management system built with Django and SQL",
       image: "/Images/Item List-2.jpg",
       technologies: ["Django", "Python", "SQL", "HTML/CSS", "JavaScript"],
@@ -45,58 +43,27 @@ export default function Projects() {
         "Led backend development in a team environment",
         "Designed database schema for optimal data organization",
         "Implemented CRUD operations with proper validation",
-        "Used Trello for agile project management",
+        "Used Trello for agile project management"
       ],
-      githubLink: "https://github.com/pdevulapally/Software-Group-Project",
+      liveLink: "#",
+      githubLink: "#",
       featured: true,
     },
     {
-      id: "puzzle",
-      title: "Ice Puzzle Solver",
-      description: "Java application implementing BFS algorithm for pathfinding in a 2D grid",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["Java", "Algorithms", "Data Structures", "BFS"],
+      id: "football-database",
+      title: "⚽ Football Database App",
+      description: "Android application for browsing football leagues and clubs with local storage",
+      image: "/Images/FootballDBapp.png",
+      technologies: ["Kotlin", "Jetpack Compose", "Room DB", "Android", "REST API"],
       keyPoints: [
-        "Implemented breadth-first search algorithm for optimal pathfinding",
-        "Created efficient data structures for grid representation",
-        "Developed dynamic parser for map input files",
-        "Achieved O(V+E) time complexity for performance",
+        "Developed with Kotlin and Jetpack Compose for modern UI",
+        "Implemented Room database for offline data persistence",
+        "Integrated TheSportsDB API for comprehensive football data",
+        "Created intuitive search and filtering functionality"
       ],
       liveLink: "#",
       githubLink: "#",
-      featured: false,
-    },
-    {
-      id: "vacation",
-      title: "Vacation Management System",
-      description: "Database design project for comprehensive vacation booking and management",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["Database Design", "SQL", "ERD", "Data Modeling"],
-      keyPoints: [
-        "Created Enhanced Entity-Relationship Diagram (EERD)",
-        "Developed comprehensive data dictionary",
-        "Implemented normalization for data integrity",
-        "Designed business queries for practical use cases",
-      ],
-      liveLink: "#",
-      githubLink: "#",
-      featured: false,
-    },
-    {
-      id: "theatre",
-      title: "Theatre Booking System",
-      description: "Java application for managing theatre bookings with advanced features",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["Java", "OOP", "Data Structures", "Exception Handling"],
-      keyPoints: [
-        "Implemented object-oriented design principles",
-        "Created robust exception handling for error management",
-        "Developed sorting algorithms for price-based ticket display",
-        "Built intuitive user interface for booking management",
-      ],
-      liveLink: "#",
-      githubLink: "#",
-      featured: false,
+      featured: true,
     },
   ]
 
@@ -120,9 +87,9 @@ export default function Projects() {
         </RevealText>
 
         {/* Featured Projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {featuredProjects.map((project, index) => (
-            <RevealText key={project.id} delay={index * 150}>
+            <RevealText key={project.id} delay={index * 200}>
               <ProjectCard
                 title={project.title}
                 description={project.description}

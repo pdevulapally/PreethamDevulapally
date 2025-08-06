@@ -3,9 +3,11 @@ import RevealText from "./reveal-text"
 
 export default function Education() {
   const achievements = [
-    "First Grade in all completed years of Software Engineering degree",
-    "Specialized in algorithms, data structures, and system design",
-    "Outstanding Leadership – Student Union & Council (NewVIc Sixth Form)",
+    "Graduated with First Class Honours (University of Westminster)",
+    "Built an AI tool used by 20+ peers",
+    "Leadership & teamwork awards at college",
+    "Held elected roles in Student Council and Union",
+    "FANS Representative supporting new students"
   ]
 
   return (
@@ -23,11 +25,11 @@ export default function Education() {
           <RevealText className="lg:col-span-2">
             <div className="bg-card-bg rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary border border-gray-700 p-6">
               <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
-                <h3 className="text-xl font-semibold text-primary">University of Westminster</h3>
-                <p className="text-text-secondary text-sm md:ml-4">September 2022 – April 2025</p>
+                <h3 className="text-xl font-semibold text-primary">🎓 University of Westminster</h3>
+                <p className="text-text-secondary text-sm md:ml-4">2022 – 2025</p>
               </div>
 
-              <p className="text-lg font-medium text-text-primary mb-1">BEng (Hons) Software Engineering</p>
+              <p className="text-lg font-medium text-text-primary mb-1">BEng (Hons) Software Engineering – <span className="text-primary font-bold">First Class Honours</span></p>
               <p className="text-text-secondary mb-5">London, UK</p>
 
               <div className="space-y-6">
@@ -96,7 +98,7 @@ export default function Education() {
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
-                      <span className="text-text-secondary">Achieved First Grade in all completed years</span>
+                      <span className="text-text-secondary">Achieved <span className="font-bold text-primary">First Class Honours</span> in all completed years</span>
                     </div>
                     <div className="flex items-start">
                       <span className="text-primary mr-2 font-bold">•</span>
@@ -125,13 +127,15 @@ export default function Education() {
 
                 <div className="space-y-4">
                   <div>
-                    <p className="font-medium text-text-primary">NewVIc Sixth Form College</p>
-                    <p className="text-text-secondary text-sm">BTEC Level 3 in IT – DDD (2019-2022)</p>
+                    <p className="font-medium text-text-primary">🏫 NewVic Sixth Form College</p>
+                    <p className="text-text-secondary text-sm">BTEC Level 3 IT – DDD</p>
+                    <p className="text-text-secondary text-sm">2019 – 2022</p>
                   </div>
 
                   <div>
-                    <p className="font-medium text-text-primary">Eastlea Community School</p>
-                    <p className="text-text-secondary text-sm">GCSEs including Computer Science (2015-2019)</p>
+                    <p className="font-medium text-text-primary">📚 Eastlea Community School</p>
+                    <p className="text-text-secondary text-sm">GCSEs</p>
+                    <p className="text-text-secondary text-sm">2015 – 2019</p>
                   </div>
                 </div>
               </div>
@@ -141,14 +145,14 @@ export default function Education() {
             <RevealText delay={400}>
               <div>
                 <h3 className="text-lg font-semibold text-text-primary mb-4 flex items-center">
-                  <Award className="mr-2 h-5 w-5 text-primary" /> Key Achievements
+                  <Award className="mr-2 h-5 w-5 text-primary" /> Achievements
                 </h3>
                 <div className="bg-card-bg rounded-xl p-5 shadow-md border border-gray-700 hover:border-primary transition-all duration-300">
                   <ul className="space-y-2">
                     {achievements.map((achievement, index) => (
                       <li key={index} className="flex items-start">
                         <span className="text-primary mr-2 font-bold">•</span>
-                        <span className="text-text-secondary">{achievement}</span>
+                        <span className="text-text-secondary" dangerouslySetInnerHTML={{ __html: achievement }}></span>
                       </li>
                     ))}
                   </ul>
@@ -162,7 +166,7 @@ export default function Education() {
         <div className="sr-only">
           <h2>Education and Academic Background</h2>
           <p>
-            Software Engineering, University of Westminster, First Grade, Algorithms, Data Structures, Web Development,
+            Software Engineering, University of Westminster, First Class Honours, Algorithms, Data Structures, Web Development,
             Mobile Development, Database Design, SQL, Python, Java, Kotlin, Django, AI, Machine Learning, RAG, NewsAPI,
             Jetpack Compose, Room Database, BTEC, Computer Science, Academic Excellence, Programming, Software
             Architecture, System Design, Full-Stack Development
